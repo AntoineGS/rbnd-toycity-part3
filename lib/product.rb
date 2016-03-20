@@ -2,6 +2,7 @@ class Product
   attr_reader :title, :price, :stock
 
   @@products = []
+  @@inStock = []
 
   def initialize(options={})
     @title = options[:title]
@@ -15,7 +16,7 @@ class Product
   end
 
   def self.find_by_title(aTitle)
-     @@products.find{|x| x.title == aTitle}
+    @@products.find{|x| x.title == aTitle}
   end
 
   def in_stock?
@@ -23,7 +24,7 @@ class Product
   end
 
   def self.in_stock
-    @@products.find{|x| x.in_stock? == true}
+    @@inStock = @@products.select{|x| x.in_stock?}
   end
 
   private

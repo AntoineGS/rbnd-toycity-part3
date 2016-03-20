@@ -4,6 +4,7 @@ require_relative "lib/product"
 require_relative "lib/transaction"
 
 # PRODUCTS
+puts "**PRODUCTS**"
 
 Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
 Product.new(title: "Nano Block Empire State Building", price: 49.99, stock: 12)
@@ -11,7 +12,7 @@ Product.new(title: "LEGO Firehouse Headquarter", price: 199.99, stock: 0)
 
 puts Product.all.count # Should return 3
 
-#Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
+# Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
 # Should return DuplicateProductError: 'LEGO Iron Man vs. Ultron' already exists.
 
 nanoblock = Product.find_by_title("Nano Block Empire State Building")
@@ -29,6 +30,7 @@ puts products_in_stock.include?(nanoblock) # Should return true
 puts products_in_stock.include?(firehouse) # Should return false
 
 # CUSTOMERS
+puts "\n**CUSTOMERS**"
 
 # Customer.new(name: "Walter Latimer")
 # Customer.new(name: "Julia Van Cleve")
@@ -43,6 +45,7 @@ puts products_in_stock.include?(firehouse) # Should return false
 # puts walter.name # Should return "Walter Latimer"
 
 # TRANSACTIONS
+puts "\n**TRANSACTIONS**"
 
 # transaction = Transaction.new(walter, nanoblock)
 
@@ -54,6 +57,7 @@ puts products_in_stock.include?(firehouse) # Should return false
 # puts nanoblock.stock # Should return 11
 
 # PURCHASES
+puts "\n**PURCHASES**"
 
 # puts walter.purchase(nanoblock)
 
