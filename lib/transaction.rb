@@ -5,7 +5,8 @@ class Transaction
   def initialize(aCustomer,aProduct)
     @customer = aCustomer
     @product = aProduct
-    @id += @@transactions.count
+    @id =+ @@transactions.count + 1
+    reduce_inventory
     add_to_transactions
   end
 
@@ -15,6 +16,10 @@ class Transaction
 
 
   private
+
+  def reduce_inventory
+    @product.sale
+  end
 
   def add_to_transactions
     @@transactions << self
