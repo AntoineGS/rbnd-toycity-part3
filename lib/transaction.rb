@@ -14,6 +14,9 @@ class Transaction
     @@transactions
   end
 
+  def self.find(id)
+    @@transactions[id-1]
+  end
 
   private
 

@@ -4,6 +4,7 @@ class Customer
 
   def initialize(options={})
     @name = options[:name]
+    @purchases = []
     add_to_customers
   end
 
@@ -15,6 +16,9 @@ class Customer
     @@customers.find{|x| x.name == aName}
   end
 
+  def purchase(aProduct)
+    @purchases << Transaction.new(self,aProduct)
+  end
 
   private
 
