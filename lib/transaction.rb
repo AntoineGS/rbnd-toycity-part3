@@ -26,7 +26,7 @@ class Transaction
 
   def add_to_transactions #adds the object to the master array
     @@transactions << self
-    @customer.purchases << self
+    @customer.purchases << self ##allows creation of transactions both in Transaction and Customer objects ensuring the Customer.purcahses is updated for Feature 1/2
   end
 
 end

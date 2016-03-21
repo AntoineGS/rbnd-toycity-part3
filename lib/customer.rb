@@ -18,7 +18,7 @@ class Customer
   end
 
   def purchase(aProduct) #allows the Customer to create a new purchase
-    @purchases << Transaction.new(self,aProduct)
+    Transaction.new(self,aProduct)
   end
 
   def purchase_count #returns purchase count for said customer
@@ -28,7 +28,6 @@ class Customer
   def self.customer_purchases_count #Feature 1/2
     @@customers.each{|x| puts "#{x.name} : #{x.purchase_count}"}
   end
-
 
 
   private
