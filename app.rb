@@ -72,4 +72,5 @@ puts transaction2.product == nanoblock # Should return true
 # FEATURES
 puts "\n **FEATURES**"
 
-Customer.customer_purchases_count
+Customer.customer_purchases_count #Feature 1/2
+nanoblock.purchase(100) #Feature 2/2

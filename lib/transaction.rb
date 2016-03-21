@@ -6,25 +6,25 @@ class Transaction
     @customer = aCustomer
     @product = aProduct
     @id =+ @@transactions.count + 1
-    reduce_inventory
+    reduce_inventory #reduces inventory for each transactions
     add_to_transactions
   end
 
-  def self.all
+  def self.all #Returns all transactions
     @@transactions
   end
 
-  def self.find(id)
+  def self.find(id) #returns object based on an id
     @@transactions[id-1]
   end
 
   private
 
-  def reduce_inventory
+  def reduce_inventory #reduces the inventory by calling Product.sale
     @product.sale
   end
 
-  def add_to_transactions
+  def add_to_transactions #adds the object to the master array
     @@transactions << self
   end
 
