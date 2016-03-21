@@ -22,7 +22,7 @@ class Customer
   end
 
   def purchase_count #returns purchase count for said customer
-    @purchases.nil? ? 0 : @purchases.count + 1
+    @purchases.count
   end
 
   def self.customer_purchases_count #Feature 1/2
