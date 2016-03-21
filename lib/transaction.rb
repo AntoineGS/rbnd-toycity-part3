@@ -26,6 +26,7 @@ class Transaction
 
   def add_to_transactions #adds the object to the master array
     @@transactions << self
+    @customer.purchases << self
   end
 
 end

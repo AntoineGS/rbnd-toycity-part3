@@ -1,5 +1,6 @@
 class Customer
-  attr_reader :name, :purchases
+  attr_reader :name
+  attr_accessor :purchases
   @@customers = []
 
   def initialize(options={})
@@ -27,6 +28,7 @@ class Customer
   def self.customer_purchases_count #Feature 1/2
     @@customers.each{|x| puts "#{x.name} : #{x.purchase_count}"}
   end
+
 
 
   private
