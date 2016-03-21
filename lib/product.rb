@@ -29,7 +29,6 @@ class Product
 
   def sale #Reduces inventory by 1 for each sale (assumes a sale of qty of 1)
     raise OutOfStockError, "'#{@title}' is out of stock." unless (@stock -= 1) > 0
-    @stock -= 1
   end
 
   def purchase(aQty) #Feature 2/2

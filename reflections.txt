@@ -1,7 +1,29 @@
 How long did you spend working on this project?
+  About 3 hours.
+
 
 What was the most rewarding challenge you conquered?
+  My biggest hurdled was with the method below, where I had << instead of = which stored all the
+  array results within the first line of the array and thus creating issues later which took a while to understand.
+  Through some debugging (various outputs and learning the p call instead of puts), I finally was able to fix it.
+
+    def self.in_stock #Returns an array of all products with stock>0
+      @@inStock = @@products.select{|x| x.in_stock?}
+    end
+
 
 What two additional features did you build? Why?
+  Customer.self.customer_purchases_count
+    Allows for quick reporting based on Customer and Sales Count, useful in the retail environment.
+
+  Product.purchase(aQty)
+    Allows to create a product "purchase" (ie: Purchase Order) to re-stock inventory.
+
+  Both of these features are things that would be useful in a retail environment and thus makes sense
+  in an application like this.
+
 
 Where do you still have room to grow?
+  Being a beginner I do not see any area where I do not have room to grow.
+  I still find myself looking online for simple Ruby formats line the "unless..." and if this
+  then that short hand (x ? y : z)

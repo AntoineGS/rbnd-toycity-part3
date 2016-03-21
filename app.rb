@@ -4,7 +4,7 @@ require_relative "lib/product"
 require_relative "lib/transaction"
 
 # PRODUCTS
-puts "**PRODUCTS**"
+#puts "**PRODUCTS**"
 
 Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
 Product.new(title: "Nano Block Empire State Building", price: 49.99, stock: 12)
@@ -30,7 +30,7 @@ puts products_in_stock.include?(nanoblock) # Should return true
 puts products_in_stock.include?(firehouse) # Should return false
 
 # CUSTOMERS
-puts "\n**CUSTOMERS**"
+#puts "\n**CUSTOMERS**"
 
 Customer.new(name: "Walter Latimer")
 Customer.new(name: "Julia Van Cleve")
@@ -45,7 +45,7 @@ walter = Customer.find_by_name("Walter Latimer")
 puts walter.name # Should return "Walter Latimer"
 
 # TRANSACTIONS
-puts "\n**TRANSACTIONS**"
+#puts "\n**TRANSACTIONS**"
 
 transaction = Transaction.new(walter, nanoblock)
 
@@ -57,7 +57,7 @@ puts transaction.customer == walter # Should return true
 puts nanoblock.stock # Should return 11
 
 # PURCHASES
-puts "\n**PURCHASES**"
+#puts "\n**PURCHASES**"
 
 puts walter.purchase(nanoblock)
 
@@ -70,7 +70,7 @@ puts transaction2.product == nanoblock # Should return true
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
 
 # FEATURES
-puts "\n **FEATURES**"
+#puts "\n **FEATURES**"
 
-Customer.customer_purchases_count #Feature 1/2
-nanoblock.purchase(100) #Feature 2/2
+#Customer.customer_purchases_count #Feature 1/2
+#nanoblock.purchase(100) #Feature 2/2

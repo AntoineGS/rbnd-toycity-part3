@@ -18,6 +18,7 @@ class Transaction
     @@transactions[id-1]
   end
 
+
   private
 
   def reduce_inventory #reduces the inventory by calling Product.sale
