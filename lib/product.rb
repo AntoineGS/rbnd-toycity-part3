@@ -28,6 +28,7 @@ class Product
   end
 
   def sale
+    raise OutOfStockError, "'#{@title}' is out of stock." unless (@stock -= 1) > 0
     @stock -= 1
   end
 

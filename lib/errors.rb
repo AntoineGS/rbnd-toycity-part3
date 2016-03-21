@@ -6,3 +6,6 @@ end
 
 class DuplicateTransactionError < StandardError
 end
+
+class OutOfStockError < StandardError
+end
