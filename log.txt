@@ -1,0 +1,119 @@
+commit b9ced8f5e5ca05f284b31dce0fbf6341dec1992e
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:57:19 2016 -0400
+
+    Product.sale: Fix bug that would reduce quantity 2x, reflections.txt: completion of questionnaire
+
+commit 6e32ebc58091570c8d84b54e64a903c0ff541f54
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:38:38 2016 -0400
+
+    Fix quantity count bug in Cusotmer.customer_purchases_count, code cleanup
+
+commit e71c486e025ab8d9a0d46bb70c00b40c55bd7cd0
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:34:10 2016 -0400
+
+    re-route update of Customer.purchases through Transactions to ensure Feature 1/2 works even with transactions created directly though Transaction objects.
+
+commit 7017d3952f3e289dff26c1f2182ae130d49a189d
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:30:33 2016 -0400
+
+    Add second feature to allow a product to be purchased and its stock increased, addition of comments throughout the files
+
+commit f26d9a1935c8425eb0585057f89942bebd0d90bb
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:23:48 2016 -0400
+
+    Add second feature to allow a product to be purchased and its stock increased, addition of comments throughout the files
+
+commit 7a639767f757b53344395a03cf7e484c16b3ce42
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 20:11:55 2016 -0400
+
+    app.rb: add FEATURES section, customer.rb: add Customer.purchase_count and Customers.self.customer_purchases_count to output all customers and qty of purchases
+
+commit 75614736e30ec62b1ca1f1d3cedaf967bbe84e45
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 19:38:55 2016 -0400
+
+    app.rb: finish until line 67, customer.rb: add Customer.purchase, transaction.rb: add Transaction.self.find
+
+commit 9b3b46b941ae9c900b0305c26e381804cc20f8dd
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 19:38:42 2016 -0400
+
+    app.rb: finish until line 67, customer.rb: add Customer.purchase, transaction.rb: add Transaction.self.find
+
+commit e46038da7a52774b9bd074373422e0816db64af4
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 19:30:38 2016 -0400
+
+    app.rb: finalize the Transactions section, transaction.rb: finalize the Transaction class, product.rb: addition of Product.sale method to reduce inventory with each sale
+
+commit 9b985517764100d734958bb9adc205e459cd90d7
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 19:17:31 2016 -0400
+
+    app.rb: Finished the CUSTOMERS section, customer.rb: Finished Customer class and error handling
+
+commit 6f47f37ff32151b44ec1dfa10f7912fc310a2f2d
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Sun Mar 20 18:58:59 2016 -0400
+
+    app.rb: Finishe the PRODUCTS portion, product.rb finalise Products.self.in_stock
+
+commit d3307bd621534f15b45716f59daa479792456f4f
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Thu Mar 17 21:06:50 2016 -0400
+
+    product.rb: added attr_reader for price & stock, self.find_by_title, self.in_stock
+
+commit f767334d06c49973312a7aac05c31121e1b60900
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Thu Mar 17 20:34:22 2016 -0400
+
+    creation of product.rb empty methods find_by_title, in_stock?, in_stock, add_to_products
+
+commit 54fdba0a51825fd8e35dac75af2046c4f1606a73
+Author: AntoineGS <antoineg.simard@gmail.com>
+Date:   Thu Mar 17 20:19:22 2016 -0400
+
+    Add ability to create and count products
+
+commit 14c21e10423a3f57bf17931b8ccdd803e240d5d1
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Tue Jan 12 01:23:47 2016 -0800
+
+    Output return values to the command line
+
+commit 50ecd4c9f92a4a76d414cb22a39a25c34e902525
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Fri Jan 8 12:02:31 2016 -0800
+
+    Removed zip file requirement
+
+commit f500dd1d9d903c1b9d49b3c9665f6a011616c546
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Thu Jan 7 09:04:43 2016 -0800
+
+    Fixed typo
+
+commit 1557be82014b78b0773f8f7bc129712e3a324286
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Wed Jan 6 02:17:14 2016 -0500
+
+    Fix typos
+
+commit ec4113db8edbd9c69e15dc85b21875c3472ca3fa
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:12:59 2016 -0500
+
+    Add LICENSE
+
+commit 1e66c23ba283ea433767f58d9a9e796282046d5c
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:09:18 2016 -0500
+
+    Initial commit
